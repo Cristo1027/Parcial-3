@@ -68,5 +68,5 @@ void start_client() {
     }
 
     close(sock);
-    std::cout << "🔌 Conexión cerrada.\n";
+    std::cout << " Conexión cerrada.\n";
 }

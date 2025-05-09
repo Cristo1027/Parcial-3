@@ -7,7 +7,7 @@ Jugador::Jugador(std::string nombre) : nombre(nombre), puntos(0) {}
 Carta Jugador::jugarCarta(int indice) {
     if (mano.empty()) {
         std::cerr << "Error: " << nombre << " no tiene cartas.\n";
-        return Carta("Error", -1);  // Retornar una carta de error
+        return Carta("Error", -1);  
     }
     if (indice < 0 || indice >= static_cast<int>(mano.size())) {
         std::cerr << "Índice inválido.\n";
@@ -15,7 +15,7 @@ Carta Jugador::jugarCarta(int indice) {
     }
 
     Carta carta_jugada = mano[indice];
-    mano.erase(mano.begin() + indice); // Eliminar la carta de la mano
+    mano.erase(mano.begin() + indice); 
     return carta_jugada;
 }
 
@@ -39,7 +39,7 @@ void Jugador::mostrarMano() const {
     std::cout << "Mano de " << nombre << ":\n";
     for (size_t i = 0; i < mano.size(); ++i) {
         std::cout << i + 1 << ". ";
-        mano[i].mostrar();  // Mostrar cada carta con su número
+        mano[i].mostrar();  
     }
     std::cout << "\n";
 }
@@ -66,5 +66,5 @@ std::string Jugador::getNombre() const {
 
 // Método para obtener la mano de cartas
 const std::vector<Carta>& Jugador::getMano() const {
-    return mano; // Devuelve una referencia constante a la mano
+    return mano; 
 }

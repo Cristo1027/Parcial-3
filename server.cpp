@@ -33,7 +33,7 @@ void start_server() {
         std::cerr << "Error al vincular el socket.\n";
         return;
     }
-    listen(server_fd, 2); // Escuchar hasta 2 conexiones
+    listen(server_fd, 2); 
 
     std::cout << "Esperando conexiones...\n";
     for (int i = 0; i < 2; ++i) {
@@ -52,7 +52,7 @@ void start_server() {
     mazo.barajar();
 
     // Repartir cartas
-    int cartasPorJugador = 36 / 2; // Suponiendo 2 jugadores
+    int cartasPorJugador = 36 / 2; 
     for (auto& jugador : jugadores) {
         jugador.recibirCartas(mazo.repartirCartas(cartasPorJugador));
     }
@@ -61,7 +61,7 @@ void start_server() {
     Tablero tablero(jugadores);
     while (!tablero.juegoTerminado()) {
         // Llamamos a jugarRonda una sola vez, pasando el arreglo completo de sockets
-        tablero.jugarRonda(new_socket); // Pasar el arreglo de sockets
+        tablero.jugarRonda(new_socket); 
     }
 
     // Cerrar los sockets de los jugadores
@@ -73,8 +73,3 @@ void start_server() {
     close(server_fd);
 }
 
-// Función principal
-//int main() {
-//    start_server(); // Iniciar el servidor
-//    return 0;
-//}

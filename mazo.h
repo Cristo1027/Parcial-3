@@ -9,7 +9,7 @@
 // Clase que representa un mazo de cartas
 class Mazo {
 private:
-    std::vector<Carta> cartas; // Vector que contiene las cartas del mazo
+    std::vector<Carta> cartas; 
 
 public:
     // Constructor que inicializa el mazo con cartas

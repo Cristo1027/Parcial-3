@@ -11,7 +11,7 @@ class Tablero {
 private:
     std::vector<Jugador> jugadores;
     bool juegoFinalizado;
-    int turnoActual; // Alterna quién comienza cada ronda
+    int turnoActual; 
 
 public:
     // Constructor
@@ -28,4 +28,4 @@ public:
     int leerOpcionJugador(int socket, int cantidad_cartas);
 };
 
-#endif // TABLERO_H
+#endif 

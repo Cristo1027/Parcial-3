@@ -2,13 +2,13 @@
 #define CARTA_H
 
 #include <iostream>
-#include <stdexcept> // Para manejar excepciones
+#include <stdexcept> 
 
 // Clase que representa una carta con un color y un número
 class Carta {
 private:
-    std::string color; // Color de la carta
-    int numero;        // Número de la carta (1-9)
+    std::string color; 
+    int numero;        
 
 public:
     // Constructor que inicializa una carta con un color y un número

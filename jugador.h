@@ -8,9 +8,9 @@
 // Clase que representa a un jugador en el juego
 class Jugador {
 private:
-    std::string nombre; // Nombre del jugador
-    std::vector<Carta> mano; // Mano del jugador
-    int puntos; // Puntos del jugador
+    std::string nombre; 
+    std::vector<Carta> mano; 
+    int puntos; 
 
 public:
     // Constructor que inicializa un jugador con un nombre
@@ -36,7 +36,7 @@ public:
     std::string getNombre() const;
 
     // Método para obtener la mano de cartas
-    const std::vector<Carta>& getMano() const; // Agregar este método
+    const std::vector<Carta>& getMano() const; 
 };
 
-#endif // JUGADOR_H
+#endif 

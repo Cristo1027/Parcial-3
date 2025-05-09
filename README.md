@@ -61,6 +61,3 @@ Las contribuciones son bienvenidas. Si deseas contribuir, por favor sigue estos 
 
 Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
 
-## Contacto
-
-Para preguntas o comentarios, por favor contacta a [tu nombre o correo electrónico].
